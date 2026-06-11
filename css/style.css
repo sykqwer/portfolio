@@ -362,10 +362,11 @@ body.light-mode {
     display: inline-block;
 }
 
-@media (max-width: 768px) {
-    .nav-links, .header-controls {
-        display: none;
-    }
+@media (max-width: 480px) 
+.nav-links {
+    display: none;
+}
+.header-controls {
     .mobile-menu-btn {
         display: block;
     }
@@ -374,7 +375,7 @@ body.light-mode {
         flex-direction: column;
         background: var(--bg-primary);
         padding: 1rem;
-        gap: 1rem;
+        gap: 0.5rem;
         border-bottom: 1px solid var(--border);
         position: fixed;
         top: 70px;
